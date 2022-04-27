@@ -1,0 +1,7 @@
+# A bunch of bash aliases to brighten your day.
+# Add this stuff to your ~/.bashrc file.
+
+# bccutil
+alias adoc_run='curl file.rdu.redhat.com/~ihorvath/runccutil.sh -o ${HOME}/.runccutil.sh && source ${HOME}/.runccutil.sh'
+alias adoc_preview='firefox -url ./build/tmp/en-US/html-single/index.html -new-tab'
+alias cd_html='cd ./build/tmp/en-US/html-single/'

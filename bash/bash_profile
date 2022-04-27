@@ -1,0 +1,11 @@
+# Add this stuff to your ~/.bash_profile file.
+
+export JAVA_HOME=$(dirname $(dirname $(readlink $(readlink $(which javac)))))
+export CLASSPATH=.:$JAVA_HOME/jre/lib:$JAVA_HOME/lib:$JAVA_HOME/lib/tools.jar:$WORKSPACE/lib
+export MAVEN_HOME=/opt/maven
+export M2_HOME=/opt/maven
+export GOPATH=$HOME/go
+
+PATH=$PATH:$HOME/.local/bin:$HOME/bin:$JAVA_HOME/bin:$M2_HOME/bin
+
+export PATH
